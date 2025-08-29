@@ -1,4 +1,4 @@
-# 🚀Web Scraping Python Script ![Build](https://img.shields.io/badge/status-in%20progress but working-yellow) ![HTML](https://img.shields.io/badge/built%20with-Python-orange) 
+# 🚀Web Scraping Python Script ![Build](https://img.shields.io/badge/status-in%20progress-yellow) ![HTML](https://img.shields.io/badge/built%20with-Python-orange) 
 
 This script can extract Blogs from any Wordpress website into an XML file just by providing the link of blog(built on wordpress). <br>
 ### Make sure before running this script in your device you should have installed:<br>
