@@ -14,7 +14,7 @@ Please follow these steps to run the Script locally on your machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone (repo url)
+git clone https://github.com/hpx07/Web-Scraping-Python-Script.git
 pip install -r requirements.txt
 python blog-extractor.py
 ```
