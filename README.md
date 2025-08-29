@@ -31,7 +31,7 @@ urls = [
 ```
 ### 3. If Script is not working
 - ✅Make sure that from which site you are copying blogs may not have blocked the use of API on their website.
-- ✅Check URL, USERNAME and PASSWORD are correct or not.
+- ✅Check URL is correct or not.
 - ✅For any other Reason use ChatGPT
 
 ---
