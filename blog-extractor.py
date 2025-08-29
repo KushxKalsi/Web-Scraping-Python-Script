@@ -5,36 +5,9 @@ from datetime import datetime, timezone
 
 # ✅ List your blog URLs here
 urls = [
-    "https://test.silverbiotech.co.in/pharma-pcd-franchise-for-immunity-booster/",
-    "https://test.silverbiotech.co.in/what-is-the-best-way-to-apply-for-pharma-pcd-franchise-in-your-region/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-haryana/",
-    "https://test.silverbiotech.co.in/pharma-franchise-for-antifungal-medicine/",
-    "https://test.silverbiotech.co.in/pharma-franchise-for-general-medicine-range/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-mumbai/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-puducherry/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-lakshadweep/",
-    "https://test.silverbiotech.co.in/pharma-franchise-for-orthopedic-medicine/",
-    "https://test.silverbiotech.co.in/pharma-franchise-for-anti-infective-medicine/",
-    "https://test.silverbiotech.co.in/how-pharma-companies-can-better-understand-patients/",
-    "https://test.silverbiotech.co.in/how-to-start-pharmaceutical-marketing-company-in-india/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-himachal-pradesh-2/",
-    "https://test.silverbiotech.co.in/anti-inflammatory-products-franchise/",
-    "https://test.silverbiotech.co.in/how-pharma-student-can-start-pharma-company/",
-    "https://test.silverbiotech.co.in/how-to-choose-best-products-for-your-pharma-franchise/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-hyderabad/",
-    "https://test.silverbiotech.co.in/how-pharma-companies-generate-franchise-queries-and-boost-business/",
-    "https://test.silverbiotech.co.in/what-is-medical-representative-role-and-responsibilities/",
-    "https://test.silverbiotech.co.in/pharma-franchise-for-ayurvedic-capsules/",
-    "https://test.silverbiotech.co.in/what-is-the-procedure-for-pharma-marketing-company-registration/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-ahmedabad/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-dadra-and-nagar-haveli/",
-    "https://test.silverbiotech.co.in/cardiac-products-pcd-franchise-in-pune/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-amritsar/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-madurai/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-ankleshwar/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-company-in-vapi/",
-    "https://test.silverbiotech.co.in/pcd-pharma-franchise-in-aurangabad/"
-
+    # can also use multiple links
+    "https://url1.com/",
+    "https://url2.com/", 
 ]
 
 # ✅ Function to fetch blog details
@@ -54,8 +27,8 @@ def fetch_blog(url):
         content_text = content_tag.get_text(strip=True) if content_tag else ""
 
         # Fetch categories/tags if available
-        categories = [cat.get_text(strip=True) for cat in soup.select(".cat-links a")]  # example
-        tags = [tag.get_text(strip=True) for tag in soup.select(".tags-links a")]       # example
+        categories = [cat.get_text(strip=True) for cat in soup.select(".cat-links a")] 
+        tags = [tag.get_text(strip=True) for tag in soup.select(".tags-links a")]      
 
         # Fetch images
         images = [img["src"] for img in soup.find_all("img", src=True)]
@@ -132,3 +105,4 @@ def create_wxr(posts, filename="blogs-export.xml"):
 # ✅ Fetch all posts
 posts = [fetch_blog(url) for url in urls if fetch_blog(url)]
 create_wxr(posts)
+
