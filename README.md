@@ -19,6 +19,20 @@ pip install -r requirements.txt
 python blog-extractor.py
 ```
 ### 2. How to Use
+- Copy the URL of Blog and paste here
+
+```bash
+# ✅ List your blog URLs here
+urls = [
+    # can also use multiple links
+    "https://url1.com/", ---enter your urls here
+    "https://url2.com/", 
+]
+```
+### 3. If Script is not working
+- ✅Make sure that from which site you are copying blogs may not have blocked the use of API on their website.
+- ✅Check URL, USERNAME and PASSWORD are correct or not.
+- ✅For any other Reason use ChatGPT
 
 ---
 
