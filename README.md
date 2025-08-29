@@ -1,18 +1,22 @@
-# 📰 News Website ![Build](https://img.shields.io/badge/status-in%20progress-yellow) ![HTML](https://img.shields.io/badge/built%20with-HTML5-orange) ![CSS](https://img.shields.io/badge/styling-CSS3-blue) ![JavaScript](https://img.shields.io/badge/script-JavaScript-yellow)
+# Web Scraping Python Script ![Build](https://img.shields.io/badge/status-in%20progress-yellow) ![HTML](https://img.shields.io/badge/built%20with-Python-orange) 
 
-A modern **News Website** built with HTML, CSS, and JavaScript — responsive, clean, and ideal for academic or portfolio use.
-
+This script is used to extract Blogs from any wordpress website into an XML file just by providing the link by editing it into main file(blog-extractor.py) using any Editor.<br>
+### Make sure before running this script in your device you should have installed:<br>
+  - Python's latest version<br>
+  - requirements.txt (required packages with compatible versions)
+  
 ---
 
 ## 📦 Installation
 
-Please follow these steps to run the project locally on your machine:
+Please follow these steps to run the Script locally on your machine:
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/hpx07/News-website.git
-cd News-website
+git clone (repo url)
+pip install -r requirements.txt
+python blog-extractor.py
 ```
 
 ### 2. Open in Browser
