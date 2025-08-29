@@ -19,7 +19,7 @@ pip install -r requirements.txt
 python blog-extractor.py
 ```
 ### 2. How to Use
-- Copy the URL of Blog and paste here
+- Copy the URL of Blog and open blog-extractor.py file in any editor and paste it here
 
 ```bash
 # ✅ List your blog URLs here
