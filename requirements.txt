@@ -1,5 +1,9 @@
-newspaper3k==0.2.8
-requests==2.31.0
-beautifulsoup4==4.12.2
-lxml==4.9.3
-nltk==3.8.1
+newspaper3k
+requests
+beautifulsoup4
+nltk
+lxml
+html5lib
+webdriver-manager
+selenium
+playwright
