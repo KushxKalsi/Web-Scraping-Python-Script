@@ -9,7 +9,7 @@ import time
 
 # ✅ List of blog URLs
 urls = [
-    "https://www.futurelearn.com/info/blog/what-is-ai-in-healthcare"
+    "https://lazymonkey.in/blog/role-of-ai-in-healthcare/"
 ]
 
 # ✅ Setup headless Chrome browser
@@ -36,7 +36,7 @@ def fetch_blog(url):
         title = title_tag.get_text(strip=True) if title_tag else "No Title"
 
         # Get content
-        content_tag = soup.find("div", class_="article-main-wrap") or soup.find("article")
+        content_tag = soup.find("div", class_="mainContent") or soup.find("article")  #in class=" " ,find tag in which blog is, copy that class name and paste here. for eg: article-main-wrap is the class in which main content of the blog is present. 
         content_html = str(content_tag) if content_tag else ""
         content_text = content_tag.get_text(strip=True) if content_tag else ""
 
@@ -89,7 +89,7 @@ def create_wxr(posts, filename="blogs-export.xml"):
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = post["title"]
         ET.SubElement(item, "link").text = post["url"]
-        ET.SubElement(item, "content:encoded").text = f"<![CDATA[{post['html']}]]>"
+        ET.SubElement(item, "content:encoded").text = f"<![CDATA[{post['html']}"
         ET.SubElement(item, "wp:post_date").text = post["publish_date"].strftime("%Y-%m-%d %H:%M:%S")
         ET.SubElement(item, "wp:post_type").text = "post"
         ET.SubElement(item, "wp:status").text = "publish"
