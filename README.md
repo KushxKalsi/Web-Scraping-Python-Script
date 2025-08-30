@@ -19,6 +19,10 @@ pip install -r requirements.txt
 pip install requests
 pip install lxml html5lib
 pip install beautifulsoup4
+pip install webdriver-manager
+pip install selenium
+pip install playwright
+playwright install
 //before running follow step 2
 python blog-extractor.py
 ```
