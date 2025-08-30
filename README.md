@@ -22,7 +22,6 @@ pip install beautifulsoup4
 pip install webdriver-manager
 pip install selenium
 pip install playwright
-playwright install
 //before running follow step 2
 python blog-extractor.py
 ```
