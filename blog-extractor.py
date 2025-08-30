@@ -9,7 +9,7 @@ import time
 
 # ✅ List of blog URLs
 urls = [
-    "https://lazymonkey.in/blog/role-of-ai-in-healthcare/"
+    "https://www.91mobiles.com/hub/asus-rog-flow-z13-2025-review/"
 ]
 
 # ✅ Setup headless Chrome browser
@@ -36,7 +36,7 @@ def fetch_blog(url):
         title = title_tag.get_text(strip=True) if title_tag else "No Title"
 
         # Get content
-        content_tag = soup.find("div", class_="mainContent") or soup.find("article")  #in class=" " ,find tag in which blog is, copy that class name and paste here. for eg: article-main-wrap is the class in which main content of the blog is present. 
+        content_tag = soup.find("div", class_="mainContent") or soup.find("td-main-content")  #in class=" " ,find tag in which blog is, copy that class name and paste here. for eg: article-main-wrap is the class in which main content of the blog is present. 
         content_html = str(content_tag) if content_tag else ""
         content_text = content_tag.get_text(strip=True) if content_tag else ""
 
