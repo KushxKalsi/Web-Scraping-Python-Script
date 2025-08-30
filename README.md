@@ -16,6 +16,10 @@ Please follow these steps to run the Script locally on your machine:
 ```bash
 git clone https://github.com/hpx07/Web-Scraping-Python-Script.git
 pip install -r requirements.txt
+pip install requests
+pip install lxml html5lib
+pip install beautifulsoup4
+//before running follow step 2
 python blog-extractor.py
 ```
 ### 2. How to Use
