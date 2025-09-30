@@ -29,7 +29,6 @@ Before running this script, make sure you have:
 - ✅ Installed required dependencies from `requirements.txt`  
 - ✅ (Optional) Browser driver (managed automatically by `webdriver-manager`)  
 
----
 
 ## 📦 Installation  
 
